@@ -47,6 +47,6 @@ test("Test API put", async ({ request }) => {
 });
 
 test("Test API delete", async ({ request }) => {
-    const response = await request.delete("https://reqres.in/api/users/2");
-    expect(response.status()).toEqual(204);
-  });
+  const response = await request.delete("https://reqres.in/api/users/2");
+  expect(response.status()).toEqual(204);
+});

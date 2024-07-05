@@ -1,2 +1,5 @@
-export const preset = 'jest-playwright-preset';
-export const testMatch = ['**/tests/**/*.spec.js'];
+module.exports = {
+    preset: 'jest-playwright-preset',
+    // testMatch: ['**/tests/**/*.test.js'],
+    testMatch: ['**/tests/**/*.spec.js']
+};
