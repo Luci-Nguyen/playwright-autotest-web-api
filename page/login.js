@@ -10,6 +10,9 @@ export class LoginPage {
   async gotoLoginPage() {
     await this.page.goto("https://www.demoblaze.com/");
   }
+  async waitForPageLoaded() {
+    await this.page.waitForLoadState("networkidle");
+  }
   async login(username, password) {
     await this.login_accept.click();
     await this.username_txt.fill(username);
